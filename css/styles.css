@@ -94,7 +94,7 @@ nav {
   justify-content: center;
 }
 
-nav h1 a {
+nav h2 a, .title {
   color: #fff;
   font-size: 14pt;
   font-weight: 200;
@@ -102,7 +102,7 @@ nav h1 a {
   text-transform: uppercase;
 }
 
-nav h1 a:hover, nav h1 a:focus {
+nav h2 a:hover, nav h2 a:focus, .title:hover, .title:focus {
   padding: 4px 4px 4px 12px;
   border: 1px dashed #eee;
 }
@@ -282,7 +282,7 @@ nav h1 a:hover, nav h1 a:focus {
   min-width: 100%;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #252831;
   font-family: Arial, sans-serif;
   font-size: 14pt;
