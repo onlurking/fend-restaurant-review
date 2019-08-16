@@ -1,6 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
 
+* {
+  box-sizing: border-box;
+}
+
 body,td,th,p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
@@ -49,11 +53,15 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   #maincontent {
-  flex-direction: row;
+    flex-direction: row;
+    position: absolute;
+    top: 92px;
+    left: 0;
   }
 }
 
@@ -100,11 +108,16 @@ nav h1 a:hover, nav h1 a:focus {
 }
 
 #breadcrumb {
-  padding: 10px 40px 16px;
-  list-style: none;
   background-color: #eee;
+  bottom: -45px;
+  display: flex;
   font-size: 17px;
+  list-style: none;
   margin: 0;
+  padding: 10px 40px 16px;
+  position: absolute;
+  right: 0;
+  width: 100vw;
 }
 
 /* Display list items side by side */
@@ -143,6 +156,12 @@ nav h1 a:hover, nav h1 a:focus {
   background-color: #ccc;
 }
 
+@media screen and (min-width: 768px) {
+  #map {
+    top: -10px;
+  }
+}
+
 .map__app {
   position: absolute;
   top: 80px;
@@ -152,7 +171,7 @@ nav h1 a:hover, nav h1 a:focus {
 /* ====================== Restaurant Filtering ====================== */
 
 .filter__wrapper {
-  width: 100vw;
+  width: 100%;
 }
 
 .filter-options {
@@ -309,11 +328,11 @@ nav h1 a:hover, nav h1 a:focus {
 .inside #map-container {
   height: 400px;
   margin-top: 132px;
-  background: blue none repeat scroll 0 0;
 }
 
 @media screen and (min-width: 600px){
   .inside #map-container {
+    margin-top: 107px;
     order: 1;
     width: 50vw;
     height: 100vh;
@@ -349,7 +368,7 @@ nav h1 a:hover, nav h1 a:focus {
   font-size: 20pt;
   font-weight: 200;
   letter-spacing: 0;
-  margin: 15px 0 30px;
+  margin: 15px 0 30px 15px;
   text-transform: uppercase;
   line-height: 1.1;
 }
