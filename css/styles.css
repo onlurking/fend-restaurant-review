@@ -349,6 +349,7 @@ nav h1 a:hover, nav h1 a:focus {
 @media screen and (min-width: 600px){
   .inside #map {
     height: 100%;
+    top: initial;
   }
 }
 
